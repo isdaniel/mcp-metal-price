@@ -1,6 +1,6 @@
 # Metal Price MCP Server
 
-An MCP server that provides current and historical gold/precious metal prices via the GoldAPI.io service.
+An MCP server that provides current and historical gold/precious metal prices via the [GoldAPI.io](https://www.goldapi.io/) service.
 
 ## Features
 
