@@ -39,12 +39,12 @@ This server is designed to be installed manually by adding its configuration to 
 1.  Add the following entry to the `mcpServers` object in your `cline_mcp_settings.json` file:
 
 ```json
-"mcp-metal-price": {
+"mcp_metal_price": {
   "args": [
     "/c",
     "python",
     "-m",
-    "mcp-metal-price"
+    "mcp_metal_price"
   ],
   "env": {
     "GOLDAPI_API_KEY": "Your GOLDAPI_API_KEY"
