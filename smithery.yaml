@@ -12,7 +12,7 @@ startCommand:
   commandFunction: |-
     config => ({
       command: 'python',
-      args: ['-m','mcp-metal-price'],
+      args: ['-m','mcp_metal_price'],
       env: {
         GOLDAPI_API_KEY: config.metalApiKey
       }

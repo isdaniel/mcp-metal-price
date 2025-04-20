@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mcp_metal_price"
-version = "0.0.1"
+version = "0.0.2"
 authors = [
   { name = "danielshih", email = "dog830228@gmail.com" },
 ]
@@ -17,7 +17,7 @@ dependencies = [
 ]
 
 [project.scripts]
-mcp_metal_price = "src.server:main"
+mcp_metal_price = "src.mcp_metal_price.server:main"
 
 [project.urls]
 Source = "https://github.com/isdaniel/mcp-metal-price"
