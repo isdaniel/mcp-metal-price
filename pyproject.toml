@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcp_metal_price"
+version = "0.0.1"
+authors = [
+  { name = "danielshih", email = "dog830228@gmail.com" },
+]
+description = "An MCP server for metal price information"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+  "mcp>=1.0.0",
+  "requests>=2.31.0"
+]
+
+[project.scripts]
+mcp_metal_price = "src.server:main"
+
+[project.urls]
+Source = "https://github.com/isdaniel/mcp-metal-price"

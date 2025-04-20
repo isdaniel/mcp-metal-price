@@ -44,7 +44,7 @@ async def list_tools() -> list[Tool]:
         ]
 
 @app.call_tool()
-def call_tool(name: str, arguments: Any) -> Sequence[TextContent]:
+async def call_tool(name: str, arguments: Any) -> Sequence[TextContent]:
     if not isinstance(arguments, dict):
         raise RuntimeError("arguments must be dictionary")
 
@@ -65,13 +65,12 @@ def call_tool(name: str, arguments: Any) -> Sequence[TextContent]:
     try:
         response = requests.get(url, headers=headers)
         response.raise_for_status()
-
-        return {
-            "content": [{
-                "type": "text",
-                "text": json.dumps(response.json(), indent=2)
-            }]
-        }
+        return [
+            TextContent(
+                type = "text",
+                text =json.dumps(response.json(), indent=2)
+            )
+        ]
     except requests.exceptions.RequestException as e:
         raise RuntimeError(f"Gold API error: {str(e)}")
 
@@ -90,7 +89,6 @@ async def main():
             )
     except KeyboardInterrupt:
         logging.info("Received KeyboardInterrupt, shutting down...")
-
 
 if __name__ == "__main__":
     import asyncio
