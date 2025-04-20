@@ -10,10 +10,4 @@ startCommand:
         type: string
         description: The API key for the metal server.
   commandFunction: |-
-    config => ({
-      command: 'python',
-      args: ['-m','mcp_metal_price'],
-      env: {
-        GOLDAPI_API_KEY: config.metalApiKey
-      }
-    })
+    config => ({ command: 'python', args: ['-m','mcp_metal_price'],  env: { GOLDAPI_API_KEY: config.metalApiKey } })
