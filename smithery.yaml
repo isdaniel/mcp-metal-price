@@ -1,12 +1,19 @@
 startCommand:
   type: stdio
   configSchema:
+    # JSON Schema defining the configuration options for the MCP.
     type: object
+    required:
+      - metalApiKey
+    properties:
+      metalApiKey:
+        type: string
+        description: The API key for the metal server.
   commandFunction: |-
     config => ({
       command: 'python',
       args: ['-m','mcp-metal-price'],
       env: {
-        GOLDAPI_API_KEY: process.env.GOLDAPI_API_KEY
+        GOLDAPI_API_KEY: config.metalApiKey
       }
     })
