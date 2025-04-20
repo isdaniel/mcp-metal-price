@@ -11,4 +11,4 @@ RUN pip install --upgrade pip \
     && pip install --ignore-requires-python --no-cache-dir .
 
 # Entrypoint to start the server
-CMD ["python", "src/server.py"]
+CMD ["python", "src/mcp_metal_price/server.py"]
