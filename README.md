@@ -32,6 +32,26 @@ An MCP server that provides current and historical gold/precious metal prices vi
 
 The server provides one MCP tool:
 
+## Installation
+
+This server is designed to be installed manually by adding its configuration to the `cline_mcp_settings.json` file.
+
+1.  Add the following entry to the `mcpServers` object in your `cline_mcp_settings.json` file:
+
+```json
+"mcp-metal-price": {
+  "args": [
+    "/c",
+    "python",
+    "-m",
+    "mcp-metal-price"
+  ],
+  "env": {
+    "GOLDAPI_API_KEY": "Your GOLDAPI_API_KEY"
+  }
+}
+```
+
 ### get_gold_price
 Get current or historical metal prices.
 
@@ -79,6 +99,7 @@ Example tool usage in Cline/Claude:
 </arguments>
 </use_mcp_tool>
 ```
+
 
 ### Response Format
 The server returns price data in JSON format:
