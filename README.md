@@ -1,3 +1,8 @@
+
+[![smithery badge](https://smithery.ai/badge/@isdaniel/mcp-metal-price)](https://smithery.ai/server/@isdaniel/mcp-metal-price)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/mcp-metal-price)](https://pypi.org/project/mcp-metal-price/)
+[![PyPI - Version](https://img.shields.io/pypi/v/mcp-metal-price)](https://pypi.org/project/mcp-metal-price/)
+
 # Metal Price MCP Server
 
 An MCP server that provides current and historical gold/precious metal prices via the [GoldAPI.io](https://www.goldapi.io/) service.
