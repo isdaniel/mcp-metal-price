@@ -1,3 +1,5 @@
+[![MseeP Badge](https://mseep.net/pr/isdaniel-mcp-metal-price-badge.jpg)](https://mseep.ai/app/isdaniel-mcp-metal-price)
+
 
 [![smithery badge](https://smithery.ai/badge/@isdaniel/mcp-metal-price)](https://smithery.ai/server/@isdaniel/mcp-metal-price)
 [![PyPI - Downloads](https://img.shields.io/pypi/dm/mcp-metal-price)](https://pypi.org/project/mcp-metal-price/)
