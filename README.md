@@ -4,6 +4,7 @@
 [![smithery badge](https://smithery.ai/badge/@isdaniel/mcp-metal-price)](https://smithery.ai/server/@isdaniel/mcp-metal-price)
 [![PyPI - Downloads](https://img.shields.io/pypi/dm/mcp-metal-price)](https://pypi.org/project/mcp-metal-price/)
 [![PyPI - Version](https://img.shields.io/pypi/v/mcp-metal-price)](https://pypi.org/project/mcp-metal-price/)
+[![Verified on MseeP](https://mseep.ai/badge.svg)](https://mseep.ai/app/d60d18a5-d88e-4dea-bc16-00bbf1c0463a)
 
 # Metal Price MCP Server
 
